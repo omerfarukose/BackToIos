@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		2224E4302A35CBD200EB4122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E42F2A35CBD200EB4122 /* AppDelegate.swift */; };
 		2224E4322A35CBD200EB4122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4312A35CBD200EB4122 /* SceneDelegate.swift */; };
-		2224E4342A35CBD200EB4122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4332A35CBD200EB4122 /* ViewController.swift */; };
+		2224E4342A35CBD200EB4122 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4332A35CBD200EB4122 /* HomeViewController.swift */; };
 		2224E4372A35CBD200EB4122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2224E4352A35CBD200EB4122 /* Main.storyboard */; };
 		2224E4392A35CBD200EB4122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2224E4382A35CBD200EB4122 /* Assets.xcassets */; };
 		2224E43C2A35CBD200EB4122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2224E43A2A35CBD200EB4122 /* LaunchScreen.storyboard */; };
 		2224E4472A35CBD300EB4122 /* BackToIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4462A35CBD300EB4122 /* BackToIosTests.swift */; };
 		2224E4512A35CBD300EB4122 /* BackToIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4502A35CBD300EB4122 /* BackToIosUITests.swift */; };
 		2224E4532A35CBD300EB4122 /* BackToIosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4522A35CBD300EB4122 /* BackToIosUITestsLaunchTests.swift */; };
+		2224E4652A35CE9800EB4122 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4642A35CE9800EB4122 /* ExploreViewController.swift */; };
+		2224E4672A35CEA600EB4122 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4662A35CEA600EB4122 /* NotificationsViewController.swift */; };
+		2224E4692A35CEAE00EB4122 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4682A35CEAE00EB4122 /* CameraViewController.swift */; };
+		2224E46B2A35CEB600EB4122 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E46A2A35CEB600EB4122 /* ProfileViewController.swift */; };
+		2224E4702A35CF5E00EB4122 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E46F2A35CF5E00EB4122 /* LoginViewController.swift */; };
+		2224E4722A35CF6E00EB4122 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4712A35CF6E00EB4122 /* RegistrationViewController.swift */; };
+		2224E4742A35CF8F00EB4122 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4732A35CF8F00EB4122 /* PostViewController.swift */; };
+		2224E4762A35CF9D00EB4122 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4752A35CF9D00EB4122 /* EditProfileViewController.swift */; };
+		2224E4782A35CFA700EB4122 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4772A35CFA700EB4122 /* SettingsViewController.swift */; };
+		2224E47A2A35CFAF00EB4122 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4792A35CFAF00EB4122 /* ListViewController.swift */; };
+		2224E47C2A35CFB700EB4122 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E47B2A35CFB700EB4122 /* SearchViewController.swift */; };
+		2224E47E2A35CFC100EB4122 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E47D2A35CFC100EB4122 /* SearchResultViewController.swift */; };
+		2224E4802A35CFDF00EB4122 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E47F2A35CFDF00EB4122 /* PostEditorViewController.swift */; };
+		2224E4822A35CFE800EB4122 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224E4812A35CFE800EB4122 /* PublishPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +53,7 @@
 		2224E42C2A35CBD200EB4122 /* BackToIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackToIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2224E42F2A35CBD200EB4122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2224E4312A35CBD200EB4122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2224E4332A35CBD200EB4122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2224E4332A35CBD200EB4122 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2224E4362A35CBD200EB4122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2224E4382A35CBD200EB4122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2224E43B2A35CBD200EB4122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,20 @@
 		2224E44C2A35CBD300EB4122 /* BackToIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackToIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2224E4502A35CBD300EB4122 /* BackToIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToIosUITests.swift; sourceTree = "<group>"; };
 		2224E4522A35CBD300EB4122 /* BackToIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2224E4642A35CE9800EB4122 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		2224E4662A35CEA600EB4122 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		2224E4682A35CEAE00EB4122 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2224E46A2A35CEB600EB4122 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2224E46F2A35CF5E00EB4122 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2224E4712A35CF6E00EB4122 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		2224E4732A35CF8F00EB4122 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		2224E4752A35CF9D00EB4122 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		2224E4772A35CFA700EB4122 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2224E4792A35CFAF00EB4122 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		2224E47B2A35CFB700EB4122 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2224E47D2A35CFC100EB4122 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		2224E47F2A35CFDF00EB4122 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
+		2224E4812A35CFE800EB4122 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +127,10 @@
 		2224E42E2A35CBD200EB4122 /* BackToIos */ = {
 			isa = PBXGroup;
 			children = (
-				2224E42F2A35CBD200EB4122 /* AppDelegate.swift */,
-				2224E4312A35CBD200EB4122 /* SceneDelegate.swift */,
-				2224E4332A35CBD200EB4122 /* ViewController.swift */,
-				2224E4352A35CBD200EB4122 /* Main.storyboard */,
-				2224E4382A35CBD200EB4122 /* Assets.xcassets */,
-				2224E43A2A35CBD200EB4122 /* LaunchScreen.storyboard */,
+				2224E4622A35CDD000EB4122 /* Resources */,
+				2224E4612A35CDC600EB4122 /* Controllers */,
+				2224E4602A35CDC300EB4122 /* Views */,
+				2224E45F2A35CDB800EB4122 /* Models */,
 				2224E43D2A35CBD200EB4122 /* Info.plist */,
 			);
 			path = BackToIos;
@@ -125,6 +151,86 @@
 				2224E4522A35CBD300EB4122 /* BackToIosUITestsLaunchTests.swift */,
 			);
 			path = BackToIosUITests;
+			sourceTree = "<group>";
+		};
+		2224E45F2A35CDB800EB4122 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2224E4602A35CDC300EB4122 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2224E4632A35CE0B00EB4122 /* Storyboards */,
+				2224E4382A35CBD200EB4122 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2224E4612A35CDC600EB4122 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2224E46D2A35CF3F00EB4122 /* Other */,
+				2224E46C2A35CEC600EB4122 /* CoreTabs */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2224E4622A35CDD000EB4122 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2224E42F2A35CBD200EB4122 /* AppDelegate.swift */,
+				2224E4312A35CBD200EB4122 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2224E4632A35CE0B00EB4122 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2224E4352A35CBD200EB4122 /* Main.storyboard */,
+				2224E43A2A35CBD200EB4122 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2224E46C2A35CEC600EB4122 /* CoreTabs */ = {
+			isa = PBXGroup;
+			children = (
+				2224E4332A35CBD200EB4122 /* HomeViewController.swift */,
+				2224E4642A35CE9800EB4122 /* ExploreViewController.swift */,
+				2224E4662A35CEA600EB4122 /* NotificationsViewController.swift */,
+				2224E4682A35CEAE00EB4122 /* CameraViewController.swift */,
+				2224E46A2A35CEB600EB4122 /* ProfileViewController.swift */,
+			);
+			path = CoreTabs;
+			sourceTree = "<group>";
+		};
+		2224E46D2A35CF3F00EB4122 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2224E46E2A35CF4500EB4122 /* Onboarding */,
+				2224E4732A35CF8F00EB4122 /* PostViewController.swift */,
+				2224E4752A35CF9D00EB4122 /* EditProfileViewController.swift */,
+				2224E4772A35CFA700EB4122 /* SettingsViewController.swift */,
+				2224E4792A35CFAF00EB4122 /* ListViewController.swift */,
+				2224E47B2A35CFB700EB4122 /* SearchViewController.swift */,
+				2224E47D2A35CFC100EB4122 /* SearchResultViewController.swift */,
+				2224E47F2A35CFDF00EB4122 /* PostEditorViewController.swift */,
+				2224E4812A35CFE800EB4122 /* PublishPostViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2224E46E2A35CF4500EB4122 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2224E46F2A35CF5E00EB4122 /* LoginViewController.swift */,
+				2224E4712A35CF6E00EB4122 /* RegistrationViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +364,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2224E4342A35CBD200EB4122 /* ViewController.swift in Sources */,
+				2224E4762A35CF9D00EB4122 /* EditProfileViewController.swift in Sources */,
+				2224E4672A35CEA600EB4122 /* NotificationsViewController.swift in Sources */,
+				2224E4822A35CFE800EB4122 /* PublishPostViewController.swift in Sources */,
+				2224E4652A35CE9800EB4122 /* ExploreViewController.swift in Sources */,
+				2224E4342A35CBD200EB4122 /* HomeViewController.swift in Sources */,
+				2224E4722A35CF6E00EB4122 /* RegistrationViewController.swift in Sources */,
+				2224E4802A35CFDF00EB4122 /* PostEditorViewController.swift in Sources */,
+				2224E4742A35CF8F00EB4122 /* PostViewController.swift in Sources */,
 				2224E4302A35CBD200EB4122 /* AppDelegate.swift in Sources */,
+				2224E47E2A35CFC100EB4122 /* SearchResultViewController.swift in Sources */,
+				2224E4702A35CF5E00EB4122 /* LoginViewController.swift in Sources */,
+				2224E47C2A35CFB700EB4122 /* SearchViewController.swift in Sources */,
+				2224E46B2A35CEB600EB4122 /* ProfileViewController.swift in Sources */,
 				2224E4322A35CBD200EB4122 /* SceneDelegate.swift in Sources */,
+				2224E4692A35CEAE00EB4122 /* CameraViewController.swift in Sources */,
+				2224E47A2A35CFAF00EB4122 /* ListViewController.swift in Sources */,
+				2224E4782A35CFA700EB4122 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
