@@ -48,6 +48,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
+        // assign frames
+        
     }
     
     private func addSubView() {
