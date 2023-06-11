@@ -9,22 +9,54 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    struct Constants {
+        static let cornerRadius: CGFloat = 8.0
+    }
+    
     private let usernameEmailField: UITextField = {
-        return UITextField()
+        let field = UITextField()
+        field.placeholder = "Username or Email"
+        field.returnKeyType = .next
+        field.leftViewMode = .always
+        field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+        field.autocapitalizationType = .none
+        field.autocorrectionType = .no
+        field.layer.masksToBounds = true
+        field.layer.cornerRadius = Constants.cornerRadius
+        field.backgroundColor = .secondarySystemBackground
+        return field
     }()
     
     private let passwordField: UITextField = {
         let field = UITextField()
         field.isSecureTextEntry = true
+        field.placeholder = "Password"
+        field.returnKeyType = .next
+        field.leftViewMode = .always
+        field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+        field.autocapitalizationType = .none
+        field.autocorrectionType = .no
+        field.layer.masksToBounds = true
+        field.layer.cornerRadius = Constants.cornerRadius
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
     private let loginButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Login", for: .normal)
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = Constants.cornerRadius
+        button.backgroundColor = .systemBlue
+        button.setTitleColor(.white, for: .normal)
+        return button
     }()
     
     private let createAccountButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Create Account", for: .normal)
+        button.setTitleColor(.label, for: .normal)
+        return button
     }()
     
     private let termsButton: UIButton = {
@@ -35,13 +67,25 @@ class LoginViewController: UIViewController {
         return UIButton()
     }()
     
-    private let headerView: UIView = {
-        return UIView()
-    }()
+    private var logoImage: UIImageView {
+        // Create UIImageView
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        imageView.contentMode = .scaleAspectFit
+        imageView.layer.cornerRadius = 10
+        imageView.layer.masksToBounds = true
+        
+        // Set image
+        let image = UIImage(named: "logo")
+        imageView.image = image
+        
+        // Center image view
+        imageView.center = view.center
+        return imageView
+    }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
         addSubView()
         view.backgroundColor = .systemBackground
     }
@@ -50,17 +94,59 @@ class LoginViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         // assign frames
+        logoImage.frame = CGRect(
+            x: view.frame.width / 4,
+            y: view.safeAreaInsets.top,
+            width: view.frame.width / 2,
+            height: view.frame.height - view.safeAreaInsets.top - 20)
+
+        usernameEmailField.frame = CGRect(
+            x: 25,
+            y:  logoImage.bottom + 10,
+            width: view.width-50,
+            height: 52)
+        
+        passwordField.frame = CGRect(
+            x: 25,
+            y:  usernameEmailField.bottom + 10,
+            width: view.width-50,
+            height: 52)
+
+        loginButton.frame = CGRect(
+            x: 25,
+            y:  passwordField.bottom + 10,
+            width: view.width-50,
+            height: 52)
+        
+        createAccountButton .frame = CGRect(
+            x: 25,
+            y:  loginButton.bottom + 10,
+            width: view.width-50,
+            height: 52)
         
     }
     
+    private func assignbackground(){
+      let background = UIImage(named: "background")
+
+      var imageView : UIImageView!
+      imageView = UIImageView(frame: view.bounds)
+      imageView.contentMode = .scaleAspectFill
+      imageView.clipsToBounds = true
+      imageView.image = background
+      imageView.center = view.center
+      view.addSubview(imageView)
+      view.sendSubviewToBack(imageView)
+    }
+    
     private func addSubView() {
+        view.addSubview(logoImage)
         view.addSubview(usernameEmailField)
         view.addSubview(passwordField)
         view.addSubview(loginButton)
         view.addSubview(createAccountButton)
         view.addSubview(termsButton)
         view.addSubview(privacyButton)
-        view.addSubview(headerView)
     }
     
     @objc private func didTapLoginButton() {}
