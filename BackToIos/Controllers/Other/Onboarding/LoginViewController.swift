@@ -69,17 +69,19 @@ class LoginViewController: UIViewController {
     
     private var logoImage: UIImageView {
         // Create UIImageView
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        let imageView = UIImageView(frame: CGRect(
+            x: view.width/4,
+            y: view.safeAreaInsets.top + 100,
+            width: view.width/2,
+            height: view.width/2))
         imageView.contentMode = .scaleAspectFit
-        imageView.layer.cornerRadius = 10
+        imageView.layer.cornerRadius = 40
         imageView.layer.masksToBounds = true
         
         // Set image
         let image = UIImage(named: "logo")
         imageView.image = image
         
-        // Center image view
-        imageView.center = view.center
         return imageView
     }
     
@@ -95,7 +97,7 @@ class LoginViewController: UIViewController {
         
         // assign frames
         logoImage.frame = CGRect(
-            x: view.frame.width / 4,
+            x: 0,
             y: view.safeAreaInsets.top,
             width: view.frame.width / 2,
             height: view.frame.height - view.safeAreaInsets.top - 20)
