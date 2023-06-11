@@ -6,6 +6,15 @@ target 'BackToIos' do
   use_frameworks!
 
   # Pods for BackToIos
+  pod 'Appirater'
+ 
+  # Firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
 
   target 'BackToIosTests' do
     inherit! :search_paths

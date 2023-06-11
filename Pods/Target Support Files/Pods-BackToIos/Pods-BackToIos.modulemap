@@ -1,0 +1,6 @@
+framework module Pods_BackToIos {
+  umbrella header "Pods-BackToIos-umbrella.h"
+
+  export *
+  module * { export * }
+}
