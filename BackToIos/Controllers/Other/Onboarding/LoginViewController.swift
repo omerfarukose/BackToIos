@@ -50,10 +50,10 @@ class LoginViewController: UIViewController {
     private let loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = Constants.cornerRadius
         button.backgroundColor = .systemBlue
-        button.setTitleColor(.white, for: .normal)
         return button
     }()
     
@@ -65,11 +65,17 @@ class LoginViewController: UIViewController {
     }()
     
     private let termsButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Terms of Service", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        return button
     }()
     
     private let privacyButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Privacy Policy", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        return button
     }()
     
     private var logoImage: UIImageView {
@@ -92,8 +98,28 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginButton.addTarget(self,
+                              action: #selector(didTapLoginButton),
+                              for: .touchUpInside)
+        
+        createAccountButton.addTarget(self,
+                              action: #selector(didTapCreateAccountButton),
+                              for: .touchUpInside)
+        
+        termsButton.addTarget(self,
+                              action: #selector(didTapTermsButton),
+                              for: .touchUpInside)
+        
+        termsButton.addTarget(self,
+                              action: #selector(didTapPrivacyButton),
+                              for: .touchUpInside)
+        
         usernameEmailField.delegate = self
         passwordField.delegate = self
+        
+        
+        
         assignbackground()
         addSubView()
         view.backgroundColor = .systemBackground
@@ -132,6 +158,19 @@ class LoginViewController: UIViewController {
             y:  loginButton.bottom + 10,
             width: view.width-50,
             height: 52)
+        
+        termsButton.frame = CGRect(
+            x: 10,
+            y: view.height - view.safeAreaInsets.bottom-100,
+            width: view.width-20,
+            height: 50)
+        
+        privacyButton.frame = CGRect(
+            x: 10,
+            y: view.height - view.safeAreaInsets.bottom-50,
+            width: view.width-20,
+            height: 50)
+        
         
     }
     
